@@ -8,9 +8,9 @@ import Bookdemo from "./Dashboard/Bookdemo";
 export default function Home() {
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center">
+      <div className="min-h-screen overflow-x-hidden flex flex-col items-center">
         <Navbar />
-        <div className="grid-background pt-16 w-full"> {/* Add padding-top to compensate for the fixed navbar */}
+        <div className="grid-background pt-16 lg:mt-0 mt-20 w-full"> {/* Add padding-top to compensate for the fixed navbar */}
           <section id="dashboard">
             <DashboardMain />
           </section>

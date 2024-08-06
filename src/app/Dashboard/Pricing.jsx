@@ -32,13 +32,8 @@ function Pricing() {
                             <h2 className=" text-2xl tracking-tight font-extrabold text-black ">
                                 Designed for business teams like yours
                             </h2>
-                            {/* <p className="mb-5 font-light text-gray-500 sm:text-xl ">
-                Here at Flowbite we focus on markets where technology, innovation,
-                and capital can unlock long-term value and drive economic growth.
-              </p> */}
-
-                            {/* breadcrumb */}
-                            <div className="m-6 w-3/4 inline-flex bg-white rounded-md shadow-lg" role="group">
+                          
+                            <div className="m-6  flex justify-center  bg-white rounded-md shadow-lg" role="group">
                                 <button
                                     type="button"
                                     onClick={() => handlePlanChange("month")}
