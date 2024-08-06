@@ -7,47 +7,42 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavigation = async (path, id) => {
-    if (router.pathname === path) {
-      document.getElementById(id)?.scrollIntoView({ behavior: "auto" });
-    } else {
-      router.push(path);
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "auto" });
-      }, 100); // Delay to ensure the DOM is updated
-    }
+   
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    
   };
 
   return (
-    <nav className="w-screen fixed p-3 shadow-md top-0 left-0 bg-white z-50">
+    <nav className="w-full fixed p-3 shadow-md top-0 left-0 bg-white z-50">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div
           onClick={() => handleNavigation("/", "root")}
-          className="text-3xl cursor-pointer font-bold text-blue-600"
+          className="text-3xl cursor-pointer font-bold text-indigo-600"
         >
           baksish
         </div>
         <div className="hidden md:flex text-semibold space-x-14 px-4">
           <button
             onClick={() => handleNavigation("/", "about")}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             About Us
           </button>
           <button
             onClick={() => handleNavigation("/", "bookademo")}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             Book a Demo
           </button>
           <button
             onClick={() => handleNavigation("/", "pricingplan")}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             Pricing
           </button>
           <button
             onClick={() => handleNavigation("/", "footer")}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             Contact Us
           </button>
@@ -55,7 +50,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-2xl text-blue-600"
+            className="text-2xl text-indigo-600"
           >
             <svg
               className="w-6 h-6"
@@ -85,7 +80,7 @@ const Navbar = () => {
               handleNavigation("/", "about");
               setIsMenuOpen(false);
             }}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             About Us
           </button>
@@ -94,7 +89,7 @@ const Navbar = () => {
               handleNavigation("/", "bookademo");
               setIsMenuOpen(false);
             }}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             Book a Demo
           </button>
@@ -103,7 +98,7 @@ const Navbar = () => {
               handleNavigation("/", "pricingplan");
               setIsMenuOpen(false);
             }}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             Pricing
           </button>
@@ -112,7 +107,7 @@ const Navbar = () => {
               handleNavigation("/", "footer");
               setIsMenuOpen(false);
             }}
-            className="hover:text-blue-600"
+            className="hover:text-indigo-600"
           >
             Contact Us
           </button>

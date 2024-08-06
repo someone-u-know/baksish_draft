@@ -4,7 +4,7 @@ import Chefimg from '../../assets/Chefimg.svg';
 
 function DashboardMain() {
   return (
-    <div className="text-center flex flex-col lg:flex-row items-center justify-center  lg:p-32 space-y-8 lgspace-y-0 lg:space-x-8">
+    <div className="text-center flex flex-col lg:flex-row items-center justify-center  lg:px-32 space-y-8 lgspace-y-0 lg:space-x-8">
       <div>
         <ul className="text-3xl text-left lg:text-6xl font-semibold">
           <li>Revolutionizing</li>

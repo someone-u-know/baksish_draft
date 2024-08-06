@@ -12,7 +12,7 @@ const AboutUs = () => {
   const { ref: whyRef, inView: whyInView } = useInView({ triggerOnce: true });
 
   return (
-    <div className="text-center p-6 md:p-20 flex flex-col items-center">
+    <div className="text-center p-6 md:px-20 flex flex-col items-center">
       <section id="about" ref={aboutRef} className="flex flex-col md:flex-row items-center justify-between p-8 mb-36">
         <motion.div
           className="text-left md:ml-20 flex-1 flex flex-col justify-center"
